@@ -19,5 +19,9 @@
 
 
 
+    <string name="repeat">"Повтор"</string>
+    <string name="transfer">"Перенос"</string>
+
+
 
 </resources>
