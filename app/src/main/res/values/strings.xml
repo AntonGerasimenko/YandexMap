@@ -22,6 +22,8 @@
     <string name="repeat">"Повтор"</string>
     <string name="transfer">"Перенос"</string>
 
+    <string name="status">"Назначено"</string>
+
 
 
 </resources>
