@@ -1,5 +1,7 @@
 package by.minsk.gerasimenko.anton.yandexmap;
 
+import android.app.DialogFragment;
+import android.app.Fragment;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -13,6 +15,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import by.minsk.gerasimenko.anton.yandexmap.views.Login;
 import ru.yandex.yandexmapkit.MapController;
 import ru.yandex.yandexmapkit.MapView;
 import ru.yandex.yandexmapkit.utils.GeoPoint;
@@ -85,17 +88,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camara) {
+        if (id == R.id.daily_load) {
+            DialogFragment login = new Login();
+            login.show(getFragmentManager(),"login");
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.price_calc) {
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.about_us) {
 
         }
 
